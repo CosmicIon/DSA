@@ -15,7 +15,7 @@ int getpower(int a, int b) {
 
 int main() {
     int a = 2, b = 10;
-    cout << getpower(a, b) << endl;
+    cout << getpower(a, b) << endl; //output:-> 1024
 
     return 1;
 }
