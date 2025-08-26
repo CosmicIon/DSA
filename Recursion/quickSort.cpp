@@ -13,7 +13,7 @@ int partition(int *arr, int s, int e) {
 
     int i = s, j = e;
     while(i < (pivotIndex) && j > (pivotIndex)) {
-        while(arr[i] < pivot) 
+        while(arr[i] <= pivot) 
             i++;
         while(arr[j] > pivot)
             j--;
@@ -33,8 +33,8 @@ void quickSort(int *arr, int s, int e) {
 }
 
 int main() {
-    int arr[] = {4,6,2,6,9,1};
-    int size = 6;
+    int arr[] = {6, 6, -6, -2, -4, -6, 2, -6}; //6 6 -6 -2 -4 -6 2 -6 
+    int size = 8;
 
     quickSort(arr, 0, size-1);
 
