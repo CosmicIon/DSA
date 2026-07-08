@@ -27,5 +27,22 @@ int main() {
     q.pop();
     cout << q.empty() << endl; //false (why?) because pop shows undefined behaviour when queue is empty
     cout << q.front() << endl;
+    
+
+//STL -> doubly ended queue;
+    cout << endl << endl;
+
+    deque<int> deq; 
+
+    deq.push_front(2);
+    deq.push_back(4);
+
+    cout << deq.front() << endl << deq.back() << endl;
+
+    deq.pop_back();
+    deq.pop_front();
+
+    cout << deq.empty() << endl;
+
     return 0;
 }
